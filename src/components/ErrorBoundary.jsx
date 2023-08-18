@@ -12,7 +12,7 @@ export default function ErrorBoundary() {
         <p className="text-lg text-center font-medium text-primery-marinblue ">
           The page you are looking for is not Found.
           <br />
-          Go back to{" "}
+          Go back to
           <Link to={"/"} className=" text-primery-strawberryRed underline ">
             Home
           </Link>

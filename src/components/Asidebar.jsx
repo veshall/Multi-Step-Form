@@ -1,5 +1,7 @@
 import React from "react";
 import Links from "./Links";
+import sidebarSvg from "../assets/images/bg-sidebar-desktop.svg";
+
 
 const linkList = [
   { step: 1, name: "YOUR INFO", path: "" },
@@ -12,12 +14,12 @@ export default function Asidebar() {
   return (
     <aside className="relative">
       <img
-        src="src\assets\images\bg-sidebar-desktop.svg"
+        src={sidebarSvg}
         className="h-[576px]"
         alt="SidebarBg"
       />
 
-      <nav className="absolute top-0 left-0  p-8 text-white ">
+      <nav className="absolute top-0 left-0 p-8 text-white">
         <ul className="space-y-8">
           {linkList.map((L) => (
             <Links key={L.step} step={L.step} name={L.name} path={L.path} />
